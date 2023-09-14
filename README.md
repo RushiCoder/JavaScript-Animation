@@ -6,7 +6,7 @@
 
   this made by using html, css, javasrcript and gsap
 
-  <a href="https://ecommerce-add-to-card.netlify.app/"><strong>➥ Live Demo</strong></a>
+  <a href="https://deft-mousse-d5cef8.netlify.app/"><strong>➥ Live Demo</strong></a>
 
 </div>
 
