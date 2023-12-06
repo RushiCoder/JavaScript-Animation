@@ -1,11 +1,13 @@
 var rect = document.querySelector("#center");
 
 rect.addEventListener("mousemove", function(details) {
-//    console.log(rect.getBoundingClientRect());
+  
+//console.log(rect.getBoundingClientRect());
 var rectanglelocation = rect.getBoundingClientRect();
 
 var insiderectval = (details.clientX - rectanglelocation.left);
 
+  // It is a gsap functionality used to decide range of our color with if-else
 if(insiderectval < rectanglelocation.width/2) {
    var redcolor = gsap.utils.mapRange(
     0, 
@@ -33,6 +35,7 @@ if(insiderectval < rectanglelocation.width/2) {
 }
 });
 
+// after mouse leaving the box then box will be white
 rect.addEventListener("mouseleave", function() {
    gsap.to(rect, {
     backgroundColor: "white"
